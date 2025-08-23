@@ -26,16 +26,15 @@ func main() {
 }
 
 func MySqrt(x int) int {
-	right := x / 2            //右边界 4
-	left := 0                 //左边界 0
-	mid := (right - left) / 2 //2
+	right := x //右边界
+	left := 0  //左边界
 	for left <= right {
+		mid := left + (right-left)/2
 		if mid*mid <= x {
-			left = left + 1
+			left = mid + 1 //左边接只会比x大
 		} else {
-			right = right - 1
+			right = mid - 1 //右边界只会比x小
 		}
-		mid = left + (right-left)/2 //2
 	}
-	return mid - 1 //至于这里为啥需减一呢
+	return right //注意返回右边界
 }

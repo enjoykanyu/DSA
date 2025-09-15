@@ -1,15 +1,16 @@
 package main
 
 import (
+	// "fmt"
+	erfenfa "DSA/erfenfa"
 	"fmt"
-	"github.com/kanyu/new_algorithm/erfenfa"
-	"github.com/kanyu/new_algorithm/stack"
-	"github.com/kanyu/new_algorithm/stack/dandiaozhan"
-	"github.com/kanyu/new_algorithm/string/kmp"
+	// "DSA/stack"
+	// "DSA/stack/dandiaozhan"
+	// "DSA/string/kmp"
 )
 
 func main() {
-	result := stack.DecodeString("3[a2[c]]")
+	//result := stack.DecodeString("3[a2[c]]")
 	//resutl1 := dandiaozhan.DailyTemperatures([]int{73, 74, 75, 71, 69, 72, 76, 73})
 	//for i := 0; i < len(resutl1); i++ {
 	//	fmt.Println(resutl1[i])
@@ -17,15 +18,16 @@ func main() {
 	//result3 := zhan.LargestRectangleArea([]int{2, 1, 5, 6, 2, 3})
 	//for i := 0; i < len(result3); i++ {
 	//	fmt.Println(result3[i])
-	//}
-	value := dandiaozhan.Trap([]int{0, 1, 0, 2, 1})
-	fmt.Println("解码结果:", result)
-	fmt.Println(value)
-	str3 := kmp.StrStr3("sttttttadbutsad", "sad")
-	fmt.Println(str3)
-	fmt.Println(kmp.RotateString("abcde630ccc", "630cccabcde"))
-	fmt.Println(erfenfa.MySqrt(15))
-
+	////}
+	//value := dandiaozhan.Trap([]int{0, 1, 0, 2, 1})
+	//fmt.Println("解码结果:", result)
+	//fmt.Println(value)
+	//str3 := kmp.StrStr3("sttttttadbutsad", "sad")
+	//fmt.Println(str3)
+	//fmt.Println(kmp.RotateString("abcde630ccc", "630cccabcde"))
+	//fmt.Println(erfenfa.MySqrt(15))
+	output := erfenfa.SearchInsert([]int{1, 3, 6, 10}, 6)
+	fmt.Print(output)
 }
 
 //package main

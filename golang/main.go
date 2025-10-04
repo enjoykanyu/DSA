@@ -26,7 +26,7 @@ func main() {
 	//fmt.Println(str3)
 	//fmt.Println(kmp.RotateString("abcde630ccc", "630cccabcde"))
 	//fmt.Println(erfenfa.MySqrt(15))
-	output := erfenfa.SearchInsert([]int{1, 3, 6, 10}, 6)
+	output := erfenfa.Search([]int{1, 3, 6, 10}, 11)
 	fmt.Print(output)
 }
 

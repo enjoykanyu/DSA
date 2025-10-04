@@ -23,7 +23,7 @@ premium lock icon
 
 func Search(nums []int, target int) int {
 	left := 0
-	right := len(nums)
+	right := len(nums) - 1 //这里得-1 右区间达不到二分的时候right可能会达到len left增加会溢出
 	for left <= right {
 		mid := left + (right-left)/2
 		if nums[mid] > target {

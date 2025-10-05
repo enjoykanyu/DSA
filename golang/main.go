@@ -1,13 +1,6 @@
 package main
 
-import (
-	// "fmt"
-	erfenfa "DSA/erfenfa"
-	"fmt"
-	// "DSA/stack"
-	// "DSA/stack/dandiaozhan"
-	// "DSA/string/kmp"
-)
+import "fmt"
 
 func main() {
 	//result := stack.DecodeString("3[a2[c]]")
@@ -26,8 +19,9 @@ func main() {
 	//fmt.Println(str3)
 	//fmt.Println(kmp.RotateString("abcde630ccc", "630cccabcde"))
 	//fmt.Println(erfenfa.MySqrt(15))
-	output := erfenfa.Search([]int{1, 3, 6, 10}, 11)
-	fmt.Print(output)
+	//output := erfenfa.Search([]int{1, 3, 6, 10}, 11)
+	//fmt.Print(output)
+	fmt.Println('c' >= 'e')
 }
 
 //package main

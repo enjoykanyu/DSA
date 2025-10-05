@@ -40,13 +40,14 @@ target 是一个小写字母*/
 func nextGreatestLetter(letters []byte, target byte) byte {
 	left := 0
 	right := len(letters) - 1
-	for left <= right && left < 0 {
-		mid := left + (right-left)/2
-		if letters[mid] < target {
+	mid := left + (right-left)/2
+	for left < right {
+		if letters[mid] <= target { //不符合直接+
 			left = mid + 1
 		} else {
-			right = mid - 1
+			right = mid
 		}
+		mid = left + (right-left)/2
 	}
 	if letters[left] > target {
 		return letters[left]

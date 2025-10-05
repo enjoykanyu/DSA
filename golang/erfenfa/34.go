@@ -44,16 +44,17 @@ func searchRange(nums []int, target int) []int {
 
 func subRange(nums []int, target int) int {
 	left := 0
-	right := len(nums) - 1
+	right := len(nums)
 	mid := left + (right-left)/2
 	//找小于target的最大值
 	for left < right {
 		if nums[mid] < target {
-			left = mid
-		} else if nums[mid] > target {
+			left = mid + 1
+		} else {
 			//大于等于不符合预期
 			right = mid
 		}
+		mid = left + (right-left)/2
 	}
 
 	return left

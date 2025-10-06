@@ -1,6 +1,6 @@
 package main
 
-import "fmt"
+import "DSA/erfenfa"
 
 func main() {
 	//result := stack.DecodeString("3[a2[c]]")
@@ -21,7 +21,8 @@ func main() {
 	//fmt.Println(erfenfa.MySqrt(15))
 	//output := erfenfa.Search([]int{1, 3, 6, 10}, 11)
 	//fmt.Print(output)
-	fmt.Println('c' >= 'e')
+	//fmt.Println('c' >= 'e')
+	erfenfa.MaximumCount([]int{-1, 0, 1})
 }
 
 //package main
